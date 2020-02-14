@@ -9,11 +9,12 @@
 	}
 
 	function playSound(event) {
+		//debugger;
 		//even tis the event object that gets generated when you push any key
 		//it contains all kinds of infoemation abou the event -> the tartget, what called it,
 		//where it happened in the app etc
-		const audio = document.querrySelector(`audio[data-key="${event.keyCode}"]`),
-			key = document.querrySelector(`div[data-key="${event.keyCode}"]`);
+		const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`),
+			key = document.querySelector(`div[data-key="${event.keyCode}"]`);
 
 
 		//the ! is a test for inequallity -> if this expression is NOT true, the do somehting also called a bang operator
